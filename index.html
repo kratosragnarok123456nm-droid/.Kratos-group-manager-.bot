@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kratos Bot | ربات مدیریت گروه</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Vazirmatn', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+header {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+header p {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+.btn-start {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-start:hover {
+    background: #e64a19;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.command-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.command-card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.command-card h3 {
+    margin: 0 0 10px 0;
+    color: #0073e6;
+}
+.command-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+.purchase-section {
+    text-align: center;
+    margin: 50px 0;
+}
+.purchase-section h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+.btn-purchase {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-purchase:hover {
+    background: #218838;
+}
+@media (max-width: 600px){
+    header h1 { font-size: 2rem; }
+    .btn-start, .btn-purchase { padding: 12px 24px; font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Kratos 🤖</h1>
+    <p>ربات مدیریت گروه در روبیکا با امکانات حرفه‌ای و کامل برای نظم و کنترل گروه شما.</p>
+    <p>ویژگی برجسته: <strong>سخنگو پیشرفته </strong> – Kratos می‌تواند به پیام‌ها پاسخ هوشمند بدهد، با کاربران تعامل کند و تجربه مدیریت گروه را به سطح جدیدی برساند.</p>
+    <a class="btn-start" href="https://rubika.ir/Kratos1238?start=true" target="_blank">شروع ربات</a>
+</header>
+
+<div class="container">
+
+    <!-- دستورها -->
+    <div class="command-card">
+        <h3>📎 پین</h3>
+        <p>روی پیام مورد نظر ریپ بزنید و کلمه <strong>پین</strong> یا <strong>سنجاق</strong> را بگید.</p>
+    </div>
+    <div class="command-card">
+        <h3>🗑 پاک</h3>
+        <p>روی پیام مورد نظر ریپ بزنید و <strong>پاک</strong> بگید. پیام بعد از چند ثانیه پاک می‌شود.</p>
+        <p class="note">فرایند بین ۳ تا ۱۰ ثانیه طول می‌کشد.</p>
+    </div>
+    <div class="command-card">
+        <h3>🔕 سکوت</h3>
+        <p>روی فرد ریپ بزنید و <strong>سکوت</strong> بگید. می‌توانید از آیدی هم استفاده کنید.</p>
+        <p>دستورات مرتبط: سکوت، سکوت@id، حذف سکوت، ریست سکوت، لیست سکوت</p>
+        <p class="note">افرادی که سکوت می‌شوند، ربات به پیام‌هایشان پاسخ نمی‌دهد و پیام‌ها پاک می‌شوند.</p>
+    </div>
+    <div class="command-card">
+        <h3>⚠️ فیلتر</h3>
+        <p>روی کلمه مورد نظر ریپ بزنید و <strong>فیلتر</strong> بگید.</p>
+        <p>دستورات مرتبط: فیلتر، حذف فیلتر، ریست فیلتر، لیست فیلتر</p>
+        <p class="note">متن‌های فیلتر شده پاک می‌شوند و کاربر اخطار می‌گیرد.</p>
+    </div>
+    <div class="command-card">
+        <h3>☠ کیل</h3>
+        <p>روی فرد ریپ بزنید و <strong>کیل</strong> بگید. می‌توانید از آیدی هم استفاده کنید.</p>
+        <p>دستورات مرتبط: کیل، کیل@id، حذف کیل، ریست کیل، لیست کیل</p>
+        <p class="note">افرادی که کیل می‌شوند، ربات پیام‌ها یا عضویتشان را مدیریت می‌کند.</p>
+    </div>
+    <div class="command-card">
+        <h3>👨‍✈️ بن</h3>
+        <p>روی فرد ریپ بزنید و <strong>بن</strong> بگید. می‌توانید از آیدی هم استفاده کنید.</p>
+        <p>دستورات مرتبط: بن، بن@id، ان بن، ان بن@id</p>
+    </div>
+    <div class="command-card">
+        <h3>👤 آمار</h3>
+        <p>برای آمار خود: <strong>آمارم</strong> در گروه ارسال کنید. برای آمار دیگران: روی پیام ریپ بزنید و <strong>آمارش</strong> بگید.</p>
+        <p>دستورات مرتبط: لقب، اصل</p>
+    </div>
+    <div class="command-card">
+        <h3>👥 افزودن</h3>
+        <p>برای افزودن اعضا، <strong>افزودن</strong> را تایپ کنید و آیدی‌ها را لیست کنید.</p>
+    </div>
+    <div class="command-card">
+        <h3>❕ اخطار</h3>
+        <p>روی پیام کاربر ریپ بزنید و <strong>اخطار</strong> ارسال کنید. برای حذف: <strong>حذف اخطار</strong></p>
+        <p class="note">تنظیم تعداد اخطار: <strong>تنظیم اخطار 3</strong></p>
+    </div>
+    <div class="command-card">
+        <h3>🎧 کال</h3>
+        <p>فعال‌سازی ویسکال: <strong>کال</strong> و برای قطع: <strong>قطع کال</strong></p>
+    </div>
+    <div class="command-card">
+        <h3>👑 ارتقا</h3>
+        <p>برای ادمین کردن: روی پیام ریپ بزنید و <strong>ارتقا</strong> بگید. برای برکناری: <strong>تنزیل</strong></p>
+        <p>می‌توانید از آیدی هم استفاده کنید: ارتقا id@ یا تنزیل id@</p>
+    </div>
+    <div class="command-card">
+        <h3>🗣 سخنگو پیشرفته رم</h3>
+        <p>Kratos با <strong>سخنگو پیشرفته رم</strong> قادر است به پیام‌های کاربران پاسخ دهد، تعامل طبیعی داشته باشد و تجربه مدیریت گروه را حرفه‌ای‌تر کند.</p>
+    </div>
+    <div class="command-card">
+        <h3>📋 لیست</h3>
+        <p>برای دریافت لیست‌ها: <strong>لیست</strong> ارسال کنید.</p>
+    </div>
+
+    <!-- بخش خرید -->
+    <div class="purchase-section">
+        <h2>💳 خرید اشتراک</h2>
+        <p>برای دسترسی به امکانات ویژه ربات، اشتراک تهیه کنید.</p>
+        <a class="btn-purchase" href="purchase.html" target="_blank">مشاهده و خرید اشتراک</a>
+    </div>
+
+</div>
+
+</body>
+</html>
